@@ -30,7 +30,7 @@ const PropertyDetails = ({ property }: PropertyDetailsProps) => {
           <div className="space-y-2">
             <p className="flex justify-between text-gray-700">
               <span>Price:</span>
-              <span className="font-semibold">${property.price.toLocaleString()}</span>
+              <span className="font-semibold">Ksh {property.price.toLocaleString()}</span>
             </p>
             <p className="flex justify-between text-gray-700">
               <span>Acreage:</span>
@@ -52,7 +52,7 @@ const PropertyDetails = ({ property }: PropertyDetailsProps) => {
             </p>
             <p className="flex justify-between text-gray-700">
               <span>Elevation:</span>
-              <span className="font-semibold">{property.elevation} ft</span>
+              <span className="font-semibold">{property.elevation} meters</span>
             </p>
           </div>
         </div>

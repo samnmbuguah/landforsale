@@ -11,7 +11,7 @@ export const properties: Property[] = [
     county: "Nakuru",
     zoning: "Mixed Use",
     access: "Year-round",
-    elevation: 1200,
+    elevation: 1868,
     amenities: [
       "Mountain Views",
       "Water Access",
