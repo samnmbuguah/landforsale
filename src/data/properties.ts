@@ -32,5 +32,36 @@ export const properties: Property[] = [
       latitude: -1.0080277,
       longitude: 36.555323
     }
+  },
+  {
+    id: "mai-mahiu-commercial-plot",
+    title: "Mai Mahiu Commercial Plot",
+    subtitle: "50x100 Plot with Commercial Potential",
+    price: 1600000,
+    description: "Prime commercial plot located along the old Naivasha road, just 1km from Mai Mahiu town. This strategically positioned 50x100 plot sits adjacent to a Go down, making it ideal for commercial development. Perfect for a petrol station development or residential homes/apartments. The property comes with all essential utilities including water and electricity connections. Enjoy great views while benefiting from the excellent location and development potential.",
+    acreage: 0.115,
+    county: "Nakuru",
+    zoning: "Commercial",
+    access: "Year-round",
+    elevation: 1868,
+    amenities: [
+      "Water Connection",
+      "Electricity Available",
+      "Road Frontage",
+      "Near Town Center",
+      "Commercial Location",
+      "Scenic Views",
+      "Next to Go down",
+      "Development Potential"
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
+      "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+      "https://images.unsplash.com/photo-1504893524553-b855bce32c67"
+    ],
+    location: {
+      latitude: -1.0080277,
+      longitude: 36.555323
+    }
   }
 ];
