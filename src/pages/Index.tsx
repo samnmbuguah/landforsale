@@ -1,10 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft } from "lucide-react";
 import PropertyHero from "@/components/PropertyHero";
 import PropertyGallery from "@/components/PropertyGallery";
 import PropertyMap from "@/components/PropertyMap";
 import PropertyDetails from "@/components/PropertyDetails";
 import { properties } from "@/data/properties";
-import { useEffect } from "react";
 
 const Index = () => {
   const { id } = useParams();
@@ -23,6 +24,17 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <div className="container mx-auto px-4 py-4">
+        <Button 
+          variant="outline" 
+          onClick={() => navigate('/')}
+          className="mb-4"
+        >
+          <ChevronLeft className="mr-2 h-4 w-4" />
+          Back to Properties
+        </Button>
+      </div>
+
       <PropertyHero property={property} />
       
       <div className="container mx-auto py-12 px-4">
