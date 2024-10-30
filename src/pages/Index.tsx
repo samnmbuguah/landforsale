@@ -1,11 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PropertyHero from "@/components/PropertyHero";
+import PropertyGallery from "@/components/PropertyGallery";
+import PropertyMap from "@/components/PropertyMap";
+import PropertyDetails from "@/components/PropertyDetails";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen">
+      <PropertyHero />
+      
+      <div className="container mx-auto py-12 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="space-y-12">
+            <PropertyGallery />
+            <PropertyMap />
+          </div>
+          
+          <PropertyDetails />
+        </div>
       </div>
     </div>
   );
