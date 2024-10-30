@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { Property } from '@/types/property';
+import CallToAction from './CallToAction';
 
 interface PropertyDetailsProps {
   property?: Property;
@@ -68,6 +69,10 @@ const PropertyDetails = ({ property }: PropertyDetailsProps) => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="pt-4">
+        <CallToAction />
       </div>
     </div>
   );
