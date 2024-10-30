@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const images = [
-  "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
-  "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-  "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
-  "https://images.unsplash.com/photo-1458668383970-8ddd3927deed"
-];
+interface PropertyGalleryProps {
+  images: string[];
+}
 
-const PropertyGallery = () => {
+const PropertyGallery = ({ images }: PropertyGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
