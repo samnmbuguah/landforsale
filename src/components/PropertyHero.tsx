@@ -2,10 +2,18 @@ import React from 'react';
 import { Property } from '@/types/property';
 
 interface PropertyHeroProps {
-  property: Property;
+  property?: Property;
 }
 
 const PropertyHero = ({ property }: PropertyHeroProps) => {
+  if (!property) {
+    return (
+      <div className="relative h-[70vh] w-full bg-gray-100 flex items-center justify-center">
+        <p className="text-gray-500">Property data not available</p>
+      </div>
+    );
+  }
+
   return (
     <div className="relative h-[70vh] w-full">
       <img

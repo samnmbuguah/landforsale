@@ -2,11 +2,19 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface PropertyGalleryProps {
-  images: string[];
+  images?: string[];
 }
 
-const PropertyGallery = ({ images }: PropertyGalleryProps) => {
+const PropertyGallery = ({ images = [] }: PropertyGalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (!images.length) {
+    return (
+      <div className="w-full aspect-[16/9] bg-gray-100 rounded-lg flex items-center justify-center">
+        <p className="text-gray-500">No images available</p>
+      </div>
+    );
+  }
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);

@@ -3,10 +3,18 @@ import { Check } from 'lucide-react';
 import { Property } from '@/types/property';
 
 interface PropertyDetailsProps {
-  property: Property;
+  property?: Property;
 }
 
 const PropertyDetails = ({ property }: PropertyDetailsProps) => {
+  if (!property) {
+    return (
+      <div className="space-y-8">
+        <p className="text-gray-500">Property details not available</p>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-8">
       <div>
