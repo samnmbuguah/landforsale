@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
+import { useEffect } from "react";
 import PropertyHero from "@/components/PropertyHero";
 import PropertyGallery from "@/components/PropertyGallery";
 import PropertyMap from "@/components/PropertyMap";
