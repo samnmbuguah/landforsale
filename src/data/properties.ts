@@ -2,36 +2,35 @@ import { Property } from "@/types/property";
 
 export const properties: Property[] = [
   {
-    id: "mountain-view-estate",
-    title: "Mountain View Estate",
-    subtitle: "40 Acres of Pristine Mountain Property",
-    price: 450000,
-    description: "Discover this breathtaking 40-acre mountain property offering the perfect blend of accessibility and privacy. Situated in the heart of the Rocky Mountains, this pristine land features dramatic mountain views, a year-round stream, and abundant wildlife. The property includes a cleared building site with electricity available at the lot line, making it ready for your dream mountain home.",
-    acreage: 40,
-    county: "Mountain County",
-    zoning: "Agricultural/Residential",
+    id: "mai-mahiu-estate",
+    title: "Mai Mahiu Estate",
+    subtitle: "1.75 Acres with Mountain Views",
+    price: 4200000,
+    description: "Located 2km off the Mai Mahiu-Narok road, this versatile 1.75-acre property offers stunning views of Mt. Margaret and the Kijabe escarpments. Currently used as farmland, the property has potential for residential development or Yellowstone mining, with a mining quarry nearby. The land features excellent infrastructure with access to both water and electricity. Just 3km from Mai Mahiu town, this property combines accessibility with natural beauty and multiple development opportunities.",
+    acreage: 1.75,
+    county: "Nakuru",
+    zoning: "Mixed Use",
     access: "Year-round",
-    elevation: 8500,
+    elevation: 1200,
     amenities: [
       "Mountain Views",
-      "Stream Access",
+      "Water Access",
       "Electricity Available",
       "Road Access",
-      "Building Site Ready",
-      "Hunting Rights",
-      "Mineral Rights Included",
-      "No HOA Restrictions"
+      "Near Mining Quarry",
+      "Agricultural Land",
+      "Close to Town",
+      "Development Potential"
     ],
     images: [
+      "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
       "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-      "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
       "https://images.unsplash.com/photo-1458668383970-8ddd3927deed"
     ],
     location: {
-      latitude: 39.123456,
-      longitude: -106.123456
+      latitude: -1.0080277,
+      longitude: 36.555323
     }
   }
-  // Add more properties here as needed
 ];
